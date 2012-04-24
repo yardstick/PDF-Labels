@@ -570,7 +570,7 @@ class PDF::Writer
     margins_pt(in2pts(top), in2pts(left), in2pts(bottom), in2pts(right))
   end
 
-    # Define the margins in points. This will move the #y pointer 
+    # Define the margins in points. This will move the #y pointer
     #
     #                                   # T  L  B  R
     #   pdf.margins_pt(36)              # 36 36 36 36
@@ -2373,8 +2373,10 @@ class PDF::Writer
   end
   private :add_page_numbers
 
+  CONVERTER = Iconv.new('ISO-8859-15//IGNORE//TRANSLIT', 'utf-8')
+
   def preprocess_text(text)
-    text
+    CONVERTER.iconv(text)
   end
   private :preprocess_text
 

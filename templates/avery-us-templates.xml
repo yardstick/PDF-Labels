@@ -227,7 +227,17 @@
     <Alias name="Avery  6501"/>
     <Alias name="Avery  6861"/>
     <Alias name="Avery  8096"/>
-  </Template> 
+  </Template>
+
+  <!-- =================================================================== -->
+  <!-- IATA: Custom format, 2 3/4" x 2", 15 per sheet x -->
+  <!-- =================================================================== -->
+  <Template name="IATA" size="US-Letter" _description="Custom Labels">
+    <Label-rectangle id="0" width="70mm" height="51mm" round="3mm">
+      <Markup-margin size="1mm"/>
+      <Layout nx="3" ny="5" x0="3mm" y0="6mm" dx="70mm" dy="54mm"/>
+    </Label-rectangle>
+  </Template>
 
   <!-- =================================================================== -->
   <!-- Avery 5366 family: Filing Labels, 2/3'' x 3_7/16'', 30 per sheet  x -->
@@ -406,7 +416,7 @@
   <!-- =================================================================== -->
   <!-- Avery 5931 family: CD/DVD Labels (spine only), 4 per sheet        x -->
   <!-- =================================================================== -->
-  <Template name="Avery 5931-Spine" size="US-Letter" 
+  <Template name="Avery 5931-Spine" size="US-Letter"
          _description="CD/DVD Labels (Spine Labels)">
     <Label-rectangle id="0" width="0.21875in" height="4.6875in" round="0.0625in" waste="0.0625in">
       <Layout nx="2" ny="2" x0="0.5in" y0="0.734375in" dx="0.46875in" dy="4.84375in"/>

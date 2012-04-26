@@ -185,7 +185,7 @@ module Pdf
         @pdf.text(bar_text,bar_hash)
   
         @pdf.select_font(old_font)
-        @pdf.text(text,arg_hash)      
+        # @pdf.text(text,arg_hash)
       end
 
       def save_as(file_name)

@@ -234,7 +234,7 @@
   <!-- =================================================================== -->
   <Template name="IATA" size="US-Letter" _description="Custom Labels">
     <Label-rectangle id="0" width="70mm" height="51mm" round="3mm">
-      <Markup-margin size="1mm"/>
+      <Markup-margin size="5mm"/>
       <Layout nx="3" ny="5" x0="3mm" y0="6mm" dx="70mm" dy="54mm"/>
     </Label-rectangle>
   </Template>

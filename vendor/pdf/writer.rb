@@ -1,4 +1,3 @@
-# encoding: us-ascii
 #--
 # PDF::Writer for Ruby.
 #   http://rubyforge.org/projects/ruby-pdf/
@@ -750,7 +749,7 @@ class PDF::Writer
 
     xref = []
 
-    content = "%PDF-#{@version}\n%‚„œ”\n"
+    content = "%PDF-\n%\303\242\303\243\303\217\303\223\n"
     pos = content.size
 
     objects.each do |oo|

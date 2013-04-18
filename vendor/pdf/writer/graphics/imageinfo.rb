@@ -215,9 +215,9 @@ class PDF::Writer::Graphics::ImageInfo
     @height = md.captures[2]
 
     @format = case md.captures[0]
-              when "P1", "P4":  "PBM"
-              when "P2", "P5":  "PGM"
-              when "P3", "P6":  "PPM"
+              when "P1", "P4" then "PBM"
+              when "P2", "P5" then "PGM"
+              when "P3", "P6" then "PPM"
               end
 
 #   if "P7" == md.captures[0]

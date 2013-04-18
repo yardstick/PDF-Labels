@@ -1,3 +1,4 @@
+# encoding: us-ascii
 #--
 # PDF::Writer for Ruby.
 #   http://rubyforge.org/projects/ruby-pdf/

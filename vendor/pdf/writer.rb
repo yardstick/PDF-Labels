@@ -2455,7 +2455,7 @@ class PDF::Writer
       height = font_height(size)
     end
 
-    text.each do |line|
+    text.each_line do |line|
       start = true
       loop do # while not line.empty? or start
         break if (line.nil? or line.empty?) and not start

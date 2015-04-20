@@ -240,6 +240,16 @@
   </Template>
 
   <!-- =================================================================== -->
+  <!-- IATA Address Labels: Custom format, 4.25" x 2.2", 10 per sheet x -->
+  <!-- =================================================================== -->
+  <Template name="IATA Address Labels" size="US-Letter" _description="Custom IATA Address Labels">
+    <Label-rectangle id="0" width="4.25in" height="2.2in" round="0">
+      <Markup-margin size="9mm"/>
+      <Layout nx="2" ny="5" x0="0in" y0="0in" dx="4.25in" dy="2.2in"/>
+    </Label-rectangle>
+  </Template>
+
+  <!-- =================================================================== -->
   <!-- Avery 5366 family: Filing Labels, 2/3'' x 3_7/16'', 30 per sheet  x -->
   <!-- =================================================================== -->
   <Template name="Avery  5366" size="US-Letter" _description="Filing Labels">
